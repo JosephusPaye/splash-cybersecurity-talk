@@ -650,11 +650,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
     <script>
+      const params = new URLSearchParams(window.location.search);
       Reveal.initialize({
         hash: true,
         slideNumber: true,
         transition: "slide",
         center: true,
+        pdfSeparateFragments: params.has("separate-fragments"),
       });
     </script>
   </body>
