@@ -139,6 +139,29 @@
         gap: 1em;
         text-align: left;
       }
+
+      .more-hint {
+        font-size: 0.45em;
+        color: #64748b;
+        margin-top: 1.2em;
+        letter-spacing: 0.05em;
+      }
+
+      .more-hint span {
+        display: inline-block;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(4px); }
+      }
+
+      .detail-title {
+        font-size: 1em;
+        color: #94a3b8;
+        margin-bottom: 0.8em;
+      }
     </style>
   </head>
   <body>
@@ -181,292 +204,364 @@
           </ul>
         </section>
 
-        <!-- Tip 1 -->
+        <!-- Tip 1: 1Password -->
         <section>
-          <h2>
-            <span class="tip-number">1</span> Use 1Password for All Your
-            Passwords
-          </h2>
-          <ul>
-            <li>
-              Splash of Colour has <strong>1Password</strong> set up for you
-              &mdash; use it for every work account
-            </li>
-            <li>
-              Let 1Password <strong>generate</strong> your passwords &mdash;
-              they'll be long, random, and unique without you having to remember
-              them
-            </li>
-            <li>
-              <strong>Never reuse</strong> a password across accounts &mdash;
-              if one gets breached, the others stay safe
-            </li>
-            <li>
-              Never share passwords over email, text, or chat &mdash; use
-              1Password's secure sharing instead
-            </li>
-            <li>
-              If you've been saving passwords in
-              <strong>Chrome or Edge</strong> &mdash; stop. Browser password
-              managers are not as secure as 1Password, and having passwords
-              scattered across browsers makes them harder to manage. Keep
-              everything in 1Password and remove saved passwords from your
-              browser
-            </li>
-          </ul>
-          <div class="risk">
-            81% of data breaches involve weak or reused passwords. If your
-            Microsoft 365 password is the same as your SMS system password,
-            one breach of the SMS system exposes participant records too.
-          </div>
-          <div class="action">
-            Make sure 1Password is installed on your devices and you're using it
-            for all your Splash of Colour accounts.
-          </div>
+          <section>
+            <h2>
+              <span class="tip-number">1</span> Use 1Password for All Your
+              Passwords
+            </h2>
+            <ul>
+              <li>
+                Splash of Colour has <strong>1Password</strong> set up for you
+                &mdash; use it for every work account
+              </li>
+              <li>
+                Let 1Password <strong>generate</strong> your passwords &mdash;
+                long, random, and unique without you having to remember them
+              </li>
+              <li>
+                If you've been saving passwords in
+                <strong>Chrome or Edge</strong> &mdash; stop. Browser password
+                managers are not as secure as 1Password, and having passwords
+                scattered makes them harder to manage
+              </li>
+            </ul>
+            <p class="more-hint"><span>&darr;</span> more details</p>
+          </section>
+          <section>
+            <h3 class="detail-title">
+              <span class="tip-number">1</span> 1Password &mdash; Details
+            </h3>
+            <ul>
+              <li>
+                <strong>Never reuse</strong> a password across accounts &mdash;
+                if one gets breached, the others stay safe
+              </li>
+              <li>
+                Never share passwords over email, text, or chat &mdash; use
+                1Password's secure sharing instead
+              </li>
+              <li>
+                Remove saved passwords from Chrome/Edge and keep everything in
+                1Password
+              </li>
+            </ul>
+            <div class="risk">
+              81% of data breaches involve weak or reused passwords. If your
+              Microsoft 365 password is the same as your SMS system password,
+              one breach of the SMS system exposes participant records too.
+            </div>
+            <div class="action">
+              Make sure 1Password is installed on your devices and you're using
+              it for all your Splash of Colour accounts.
+            </div>
+          </section>
         </section>
 
-        <!-- Tip 2 -->
+        <!-- Tip 2: MFA -->
         <section>
-          <h2>
-            <span class="tip-number">2</span> Enable Multi-Factor Authentication
-            (MFA)
-          </h2>
-          <ul>
-            <li>
-              MFA adds a <strong>second layer</strong> of protection beyond your
-              password &mdash; like a deadlock on top of a regular lock
-            </li>
-            <li>
-              When you log in, you'll confirm with a one-time code from an app
-              or a notification on your phone
-            </li>
-            <li>
-              Even if someone steals your password,
-              <strong>they still can't get in</strong> without your second factor
-            </li>
-          </ul>
-          <div class="risk">
-            Without MFA, a stolen password = full account access. Phishing
-            attacks regularly harvest passwords, but MFA stops them cold.
-          </div>
-          <div class="action">
-            If you don't have it already or you're unsure, let me know and we'll
-	    check and enable MFA on your Microsoft 365 account.
-          </div>
+          <section>
+            <h2>
+              <span class="tip-number">2</span> Enable Multi-Factor
+              Authentication (MFA)
+            </h2>
+            <ul>
+              <li>
+                MFA adds a <strong>second layer</strong> of protection beyond
+                your password &mdash; like a deadlock on top of a regular lock
+              </li>
+              <li>
+                Even if someone steals your password,
+                <strong>they still can't get in</strong> without your second
+                factor
+              </li>
+            </ul>
+            <p class="more-hint"><span>&darr;</span> more details</p>
+          </section>
+          <section>
+            <h3 class="detail-title">
+              <span class="tip-number">2</span> MFA &mdash; Details
+            </h3>
+            <ul>
+              <li>
+                When you log in, you'll confirm with a one-time code from an
+                app or a notification on your phone
+              </li>
+            </ul>
+            <div class="risk">
+              Without MFA, a stolen password = full account access. Phishing
+              attacks regularly harvest passwords, but MFA stops them cold.
+            </div>
+            <div class="action">
+              If you don't have it already or you're unsure, let me know and
+              we'll check and enable MFA on your Microsoft 365 account.
+            </div>
+          </section>
         </section>
 
-        <!-- Tip 3 -->
+        <!-- Tip 3: Phishing -->
         <section>
-          <h2>
-            <span class="tip-number">3</span> Spot Phishing &amp; Scams
-          </h2>
-          <ul>
-            <li>
-              <strong>Phishing</strong> = fake emails, texts, or messages
-              designed to trick you into clicking a link or giving up
-              information
-            </li>
-            <li>
-              Watch for: urgency ("act now!"), unexpected attachments, slight
-              misspellings in sender addresses, and requests for passwords or
-              payment
-            </li>
-            <li>
-              <strong>When in doubt, don't click.</strong> Verify with the
-              sender through a different channel
-            </li>
-          </ul>
-          <div class="risk">
-            91% of cyberattacks start with a phishing email. One click on a
-            malicious link can compromise your account and the data you have
-            access to.
-          </div>
-          <div class="action">
-            Got a suspicious email? Don't click anything. Forward it to me
-            (websites@josephuspaye.com) and delete it.
-          </div>
+          <section>
+            <h2>
+              <span class="tip-number">3</span> Spot Phishing &amp; Scams
+            </h2>
+            <ul>
+              <li>
+                <strong>Phishing</strong> = fake emails, texts, or messages
+                designed to trick you into clicking a link or giving up
+                information
+              </li>
+              <li>
+                Watch for: urgency ("act now!"), unexpected attachments,
+                misspellings in sender addresses, and requests for passwords or
+                payment
+              </li>
+              <li>
+                <strong>When in doubt, don't click.</strong> Verify with the
+                sender through a different channel
+              </li>
+            </ul>
+            <p class="more-hint"><span>&darr;</span> more details</p>
+          </section>
+          <section>
+            <h3 class="detail-title">
+              <span class="tip-number">3</span> Phishing &mdash; Details
+            </h3>
+            <div class="risk">
+              91% of cyberattacks start with a phishing email. One click on a
+              malicious link can compromise your account and the data you have
+              access to.
+            </div>
+            <div class="action">
+              Got a suspicious email? Don't click anything. Forward it to me
+              (websites@josephuspaye.com) and delete it.
+            </div>
+          </section>
         </section>
 
-        <!-- Tip 4 -->
+        <!-- Tip 4: Updates & Malwarebytes -->
         <section>
-          <h2>
-            <span class="tip-number">4</span> Keep Your Software Up to Date
-          </h2>
-          <ul>
-            <li>
-              When your computer or phone asks to update &mdash;
-              <strong>say yes</strong>, don't keep hitting "remind me later"
-            </li>
-            <li>
-              Updates aren't just new features &mdash; they patch security holes
-              that attackers actively exploit
-            </li>
-            <li>
-              This applies to everything: Windows (your laptop), your phone,
-              browsers, Microsoft 365 apps, and any other apps you use for work
-            </li>
-            <li>
-              <strong>Malwarebytes</strong> is installed on your devices to
-              protect against malware and viruses &mdash; make sure it's
-              running and don't disable or ignore it
-            </li>
-          </ul>
-          <div class="risk">
-            Unpatched systems are the #1 way attackers get in. Security
-            software like Malwarebytes can only protect you if it's actually
-            running &mdash; disabled or outdated protection is the same as no
-            protection.
-          </div>
-          <div class="action">
-            Next time you see an update notification, install it straight away.
-            If it needs a restart, save your work and restart.
-          </div>
+          <section>
+            <h2>
+              <span class="tip-number">4</span> Keep Your Software Up to Date
+            </h2>
+            <ul>
+              <li>
+                When your computer or phone asks to update &mdash;
+                <strong>say yes</strong>, don't keep hitting "remind me later"
+              </li>
+              <li>
+                Updates patch security holes that attackers actively exploit
+              </li>
+              <li>
+                <strong>Malwarebytes</strong> is installed on your devices
+                &mdash; make sure it's running and don't disable or ignore it
+              </li>
+            </ul>
+            <p class="more-hint"><span>&darr;</span> more details</p>
+          </section>
+          <section>
+            <h3 class="detail-title">
+              <span class="tip-number">4</span> Updates &mdash; Details
+            </h3>
+            <ul>
+              <li>
+                This applies to everything: Windows (your laptop), your phone,
+                browsers, Microsoft 365 apps, and any other apps you use for
+                work
+              </li>
+            </ul>
+            <div class="risk">
+              Unpatched systems are the #1 way attackers get in. Security
+              software like Malwarebytes can only protect you if it's actually
+              running &mdash; disabled or outdated protection is the same as no
+              protection.
+            </div>
+            <div class="action">
+              Next time you see an update notification, install it straight
+              away. If it needs a restart, save your work and restart.
+            </div>
+          </section>
         </section>
 
-        <!-- Tip 5 -->
+        <!-- Tip 5: Lock & Log Out -->
         <section>
-          <h2>
-            <span class="tip-number">5</span> Lock Your Screen &amp; Log Out
-            Properly
-          </h2>
-          <ul>
-            <li>
-              In the office, at the pool, or wherever you're working around
-              others &mdash; if you walk away from your device,
-              <strong>lock it first</strong>
-            </li>
-            <li>
-              It takes two seconds on the computer &mdash; just press
-              <strong>Win + L</strong> to lock
-            </li>
-            <li>
-              At the <strong>end of the day</strong>, log out of your accounts
-              (Microsoft 365, email, any web apps) &mdash; don't just close the
-              lid or walk away
-            </li>
-            <li>
-              Make sure your phone has a PIN, fingerprint, or face unlock
-              enabled &mdash; no swipe-only locks
-            </li>
-          </ul>
-          <div class="risk">
-            An unlocked device or a session left logged in overnight means
-            anyone with access to that device can get into your accounts,
-            participant information, and Splash documents.
-          </div>
-          <div class="action">
-            Stepping away = lock screen. End of day = log out. Make it a habit.
-          </div>
+          <section>
+            <h2>
+              <span class="tip-number">5</span> Lock Your Screen &amp; Log Out
+              Properly
+            </h2>
+            <ul>
+              <li>
+                Walk away from your device?
+                <strong>Lock it first</strong> &mdash; just press
+                <strong>Win + L</strong>
+              </li>
+              <li>
+                At the <strong>end of the day</strong>, log out of your
+                accounts &mdash; don't just close the lid
+              </li>
+              <li>
+                Make sure your phone has a PIN, fingerprint, or face unlock
+                &mdash; no swipe-only locks
+              </li>
+            </ul>
+            <p class="more-hint"><span>&darr;</span> more details</p>
+          </section>
+          <section>
+            <h3 class="detail-title">
+              <span class="tip-number">5</span> Lock &amp; Log Out &mdash;
+              Details
+            </h3>
+            <div class="risk">
+              An unlocked device or a session left logged in overnight means
+              anyone with access to that device can get into your accounts,
+              participant information, and Splash documents.
+            </div>
+            <div class="action">
+              Stepping away = lock screen. End of day = log out. Make it a
+              habit.
+            </div>
+          </section>
         </section>
 
-        <!-- Tip 6 -->
+        <!-- Tip 6: Public Wi-Fi -->
         <section>
-          <h2>
-            <span class="tip-number">6</span> Be Careful on Public Wi-Fi
-          </h2>
-          <ul>
-            <li>
-              Pool facilities, community centres, and cafes often have
-              <strong>open Wi-Fi networks</strong> that anyone can join &mdash;
-              including attackers
-            </li>
-            <li>
-              Avoid accessing sensitive information (email, participant records,
-              banking) on public Wi-Fi
-            </li>
-            <li>
-              If you need to work on the go, use your
-              <strong>phone's mobile hotspot</strong> instead &mdash; it's much
-              safer than open Wi-Fi. Or use a <strong>trusted VPN</strong> if
-              you need to connect to public Wi-Fi.
-            </li>
-          </ul>
-          <div class="risk">
-            Attackers can set up fake Wi-Fi networks with names like "Pool Free
-            WiFi" to intercept everything you do online &mdash; including
-            passwords and messages.
-          </div>
-          <div class="action">
-            Next time you're working outside the office, use your phone's
-            hotspot instead of connecting to public Wi-Fi.
-          </div>
+          <section>
+            <h2>
+              <span class="tip-number">6</span> Be Careful on Public Wi-Fi
+            </h2>
+            <ul>
+              <li>
+                Pool facilities, community centres, and cafes have
+                <strong>open Wi-Fi</strong> that anyone can join &mdash;
+                including attackers
+              </li>
+              <li>
+                Use your <strong>phone's mobile hotspot</strong> instead, or a
+                <strong>trusted VPN</strong> if you must use public Wi-Fi
+              </li>
+            </ul>
+            <p class="more-hint"><span>&darr;</span> more details</p>
+          </section>
+          <section>
+            <h3 class="detail-title">
+              <span class="tip-number">6</span> Public Wi-Fi &mdash; Details
+            </h3>
+            <ul>
+              <li>
+                Avoid accessing sensitive information (email, participant
+                records, banking) on public Wi-Fi
+              </li>
+            </ul>
+            <div class="risk">
+              Attackers can set up fake Wi-Fi networks with names like "Pool
+              Free WiFi" to intercept everything you do online &mdash;
+              including passwords and messages.
+            </div>
+            <div class="action">
+              Next time you're working outside the office, use your phone's
+              hotspot instead of connecting to public Wi-Fi.
+            </div>
+          </section>
         </section>
 
-        <!-- Tip 7 -->
+        <!-- Tip 7: OneDrive -->
         <section>
-          <h2>
-            <span class="tip-number">7</span> Save Files to OneDrive, Not Your
-            Desktop
-          </h2>
-          <ul>
-            <li>
-              Splash of Colour uses <strong>Microsoft 365</strong> &mdash; save
-              all work files to <strong>OneDrive</strong>, not your desktop or
-              Downloads folder
-            </li>
-            <li>
-              Files in OneDrive are backed up, protected, and accessible from
-              any device if yours breaks or gets lost
-            </li>
-            <li>
-              <strong>Never email</strong> participant records or sensitive
-              documents to personal email accounts
-            </li>
-            <li>
-              Share files using OneDrive links instead of emailing
-              attachments where possible &mdash; this way, access can be
-              revoked if something goes wrong (e.g. a link mistakenly sent to
-              the wrong person)
-            </li>
-          </ul>
-          <div class="risk">
-            Files saved only on your desktop disappear if your laptop is lost,
-            stolen, or breaks. Participant or Splash data emailed to a personal
-            Gmail account has left the safety of Splash of Colour's systems
-            entirely.
-          </div>
-          <div class="action">
-            Check your Desktop and Downloads folders now &mdash; move any work
-            files to OneDrive.
-          </div>
+          <section>
+            <h2>
+              <span class="tip-number">7</span> Save Files to OneDrive, Not
+              Your Desktop
+            </h2>
+            <ul>
+              <li>
+                Save all work files to <strong>OneDrive</strong>, not your
+                desktop or Downloads folder
+              </li>
+              <li>
+                <strong>Never email</strong> participant records or sensitive
+                documents to personal email accounts
+              </li>
+              <li>
+                Share files using <strong>OneDrive links</strong> instead of
+                emailing attachments where possible
+              </li>
+            </ul>
+            <p class="more-hint"><span>&darr;</span> more details</p>
+          </section>
+          <section>
+            <h3 class="detail-title">
+              <span class="tip-number">7</span> OneDrive &mdash; Details
+            </h3>
+            <ul>
+              <li>
+                Files in OneDrive are backed up, protected, and accessible from
+                any device if yours breaks or gets lost
+              </li>
+              <li>
+                Sharing via links means access can be revoked if something goes
+                wrong (e.g. a link mistakenly sent to the wrong person)
+              </li>
+            </ul>
+            <div class="risk">
+              Files saved only on your desktop disappear if your laptop is
+              lost, stolen, or breaks. Participant or Splash data emailed to a
+              personal Gmail account has left the safety of Splash of Colour's
+              systems entirely.
+            </div>
+            <div class="action">
+              Check your Desktop and Downloads folders now &mdash; move any
+              work files to OneDrive.
+            </div>
+          </section>
         </section>
 
-        <!-- Tip 8 -->
+        <!-- Tip 8: Report -->
         <section>
-          <h2>
-            <span class="tip-number">8</span> Report Anything Suspicious
-          </h2>
-          <ul>
-            <li>
-              Got a weird email? Something on your computer acting strange? A
-              login you don't recognise?
-              <strong>Tell Ennia immediately</strong> and forward it to me
-              at websites@josephuspaye.com
-            </li>
-            <li>
-              There's no such thing as a silly question when it comes to
-              security &mdash; <strong>it's always better to ask</strong>
-            </li>
-            <li>
-              Speed matters: the faster a threat is reported, the less damage it
-              can do
-            </li>
-            <li>
-              If you think you clicked a bad link or entered your password
-              somewhere suspicious &mdash; let Ennia know
-              <strong>right away</strong>, then change your password on that
-              account and save the new password in 1Password
-            </li>
-          </ul>
-          <div class="risk">
-            The average data breach goes undetected for 200+ days. Early
-            reporting can be the difference between a close call and a serious
-            incident.
-          </div>
-          <div class="action">
-            Save my email somewhere easy to find (websites@josephuspaye.com).
-            When in doubt, reach out.
-          </div>
+          <section>
+            <h2>
+              <span class="tip-number">8</span> Report Anything Suspicious
+            </h2>
+            <ul>
+              <li>
+                Weird email? Something acting strange?
+                <strong>Tell Ennia immediately</strong> and forward it to me at
+                websites@josephuspaye.com
+              </li>
+              <li>
+                There's no such thing as a silly question &mdash;
+                <strong>it's always better to ask</strong>
+              </li>
+              <li>
+                Speed matters: the faster a threat is reported, the less damage
+                it can do
+              </li>
+            </ul>
+            <p class="more-hint"><span>&darr;</span> more details</p>
+          </section>
+          <section>
+            <h3 class="detail-title">
+              <span class="tip-number">8</span> Reporting &mdash; Details
+            </h3>
+            <ul>
+              <li>
+                If you think you clicked a bad link or entered your password
+                somewhere suspicious &mdash; let Ennia know
+                <strong>right away</strong>, then change your password on that
+                account and save the new password in 1Password
+              </li>
+            </ul>
+            <div class="risk">
+              The average data breach goes undetected for 200+ days. Early
+              reporting can be the difference between a close call and a
+              serious incident.
+            </div>
+            <div class="action">
+              Save my email somewhere easy to find
+              (websites@josephuspaye.com). When in doubt, reach out.
+            </div>
+          </section>
         </section>
 
         <!-- Checklist slide -->
