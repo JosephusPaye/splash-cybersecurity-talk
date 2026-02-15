@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity Hygiene for Non-Profits</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css"
+    />
+    <style>
+      :root {
+        --r-heading-color: #e2e8f0;
+        --r-main-color: #cbd5e1;
+        --r-link-color: #60a5fa;
+      }
+
+      .reveal {
+        font-size: 32px;
+      }
+
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        text-transform: none;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .reveal h1 {
+        font-size: 2em;
+      }
+
+      .reveal h2 {
+        font-size: 1.4em;
+        margin-bottom: 0.6em;
+      }
+
+      .reveal h3 {
+        font-size: 1em;
+        color: #94a3b8;
+        font-weight: 400;
+        margin-bottom: 1em;
+      }
+
+      .reveal ul {
+        display: block;
+        text-align: left;
+        margin-left: 0;
+      }
+
+      .reveal li {
+        margin-bottom: 0.5em;
+        line-height: 1.4;
+        font-size: 0.85em;
+      }
+
+      .tip-number {
+        display: inline-block;
+        background: #3b82f6;
+        color: #fff;
+        width: 1.6em;
+        height: 1.6em;
+        line-height: 1.6em;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: 700;
+        font-size: 0.9em;
+        margin-right: 0.3em;
+        vertical-align: middle;
+      }
+
+      .risk {
+        background: rgba(239, 68, 68, 0.15);
+        border-left: 4px solid #ef4444;
+        padding: 0.5em 0.8em;
+        margin: 0.6em 0;
+        border-radius: 0 6px 6px 0;
+        font-size: 0.75em;
+        color: #fca5a5;
+        text-align: left;
+      }
+
+      .risk::before {
+        content: "\26A0\FE0F  ";
+      }
+
+      .action {
+        background: rgba(34, 197, 94, 0.15);
+        border-left: 4px solid #22c55e;
+        padding: 0.5em 0.8em;
+        margin: 0.6em 0;
+        border-radius: 0 6px 6px 0;
+        font-size: 0.75em;
+        color: #86efac;
+        text-align: left;
+      }
+
+      .checklist {
+        list-style: none;
+        padding-left: 0;
+        text-align: left;
+      }
+
+      .checklist li {
+        font-size: 0.65em;
+        margin-bottom: 0.35em;
+        padding-left: 1.5em;
+        position: relative;
+      }
+
+      .checklist li::before {
+        content: "\2610";
+        position: absolute;
+        left: 0;
+        color: #60a5fa;
+        font-size: 1.1em;
+      }
+
+      .subtitle {
+        color: #94a3b8;
+        font-size: 0.7em;
+        margin-top: 0.5em;
+      }
+
+      .source {
+        font-size: 0.45em;
+        color: #64748b;
+        margin-top: 2em;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Title slide -->
+        <section>
+          <h1>Cybersecurity Hygiene</h1>
+          <h3>
+            10 practical tips to protect your organisation<br />from common
+            cyber threats
+          </h3>
+          <p class="subtitle">A guide for non-profits and small teams</p>
+        </section>
+
+        <!-- Why it matters -->
+        <section>
+          <h2>Why does this matter?</h2>
+          <ul>
+            <li>
+              <strong>43% of cyberattacks target small organisations</strong>
+              &mdash; including non-profits
+            </li>
+            <li>
+              Non-profits hold sensitive data: donor info, financials, personal
+              records
+            </li>
+            <li>A single breach can destroy trust and funding</li>
+            <li>
+              The good news: <strong>most attacks are preventable</strong> with
+              basic hygiene
+            </li>
+          </ul>
+          <div class="risk">
+            Cybersecurity hygiene = the ongoing routines, behaviours, and best
+            practices that reduce vulnerabilities and mitigate risk.
+          </div>
+        </section>
+
+        <!-- Tip 1 -->
+        <section>
+          <h2>
+            <span class="tip-number">1</span> Keep Software & Systems Up to
+            Date
+          </h2>
+          <ul>
+            <li>
+              Outdated software has known security holes that attackers actively
+              exploit
+            </li>
+            <li>
+              Vendors release patches specifically to fix these vulnerabilities
+            </li>
+            <li>
+              Enable <strong>automatic updates</strong> wherever possible
+              &mdash; on computers, phones, and apps
+            </li>
+          </ul>
+          <div class="risk">
+            Unpatched systems are the #1 way attackers get in. The WannaCry
+            ransomware attack exploited a vulnerability that had a patch
+            available for months.
+          </div>
+          <div class="action">
+            Today: check that auto-updates are turned on for your OS, browser,
+            and key apps.
+          </div>
+        </section>
+
+        <!-- Tip 2 -->
+        <section>
+          <h2>
+            <span class="tip-number">2</span> Use Strong, Unique Passwords
+          </h2>
+          <ul>
+            <li>
+              Every account needs a <strong>distinct</strong> password &mdash;
+              reusing passwords means one breach exposes everything
+            </li>
+            <li>
+              Aim for <strong>12+ characters</strong> mixing uppercase,
+              lowercase, numbers, and symbols
+            </li>
+            <li>
+              Use a <strong>password manager</strong> (e.g. Bitwarden, 1Password)
+              to generate and store them securely
+            </li>
+          </ul>
+          <div class="risk">
+            81% of data breaches involve weak or reused passwords. If your email
+            password is the same as your donor database password, both are at
+            risk.
+          </div>
+          <div class="action">
+            Set up a free password manager like Bitwarden and start migrating
+            your most important accounts.
+          </div>
+        </section>
+
+        <!-- Tip 3 -->
+        <section>
+          <h2>
+            <span class="tip-number">3</span> Enable Multi-Factor Authentication
+            (MFA)
+          </h2>
+          <ul>
+            <li>
+              MFA adds a <strong>second layer</strong> of protection beyond your
+              password
+            </li>
+            <li>
+              Typically a one-time code from an app, SMS, or biometric
+              verification (fingerprint/face)
+            </li>
+            <li>
+              Even if someone steals your password,
+              <strong>they still can't get in</strong> without the second factor
+            </li>
+          </ul>
+          <div class="risk">
+            Without MFA, a stolen password = full account access. Phishing
+            attacks regularly harvest passwords, but MFA stops them.
+          </div>
+          <div class="action">
+            Enable MFA on your email, banking, and cloud storage accounts first
+            &mdash; these are the highest-value targets.
+          </div>
+        </section>
+
+        <!-- Tip 4 -->
+        <section>
+          <h2><span class="tip-number">4</span> Back Up Data Regularly</h2>
+          <ul>
+            <li>
+              Backups protect against ransomware, hardware failure, and
+              accidental deletion
+            </li>
+            <li>
+              Follow the <strong>3-2-1 rule</strong>:
+              <ul>
+                <li><strong>3</strong> copies of your data</li>
+                <li><strong>2</strong> different storage types (e.g. local + cloud)</li>
+                <li><strong>1</strong> copy offsite or in the cloud</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Test your backups</strong> &mdash; a backup you can't
+              restore is useless
+            </li>
+          </ul>
+          <div class="risk">
+            Ransomware attacks encrypt your files and demand payment.
+            Organisations with good backups can recover without paying.
+          </div>
+          <div class="action">
+            Verify that your critical files (donor data, financials) are being
+            backed up automatically today.
+          </div>
+        </section>
+
+        <!-- Tip 5 -->
+        <section>
+          <h2>
+            <span class="tip-number">5</span> Train Staff to Spot Threats
+          </h2>
+          <ul>
+            <li>
+              <strong>People are the weakest link</strong> &mdash; and the
+              strongest defence when trained well
+            </li>
+            <li>
+              Teach staff and volunteers to recognise phishing emails, suspicious
+              links, and social engineering
+            </li>
+            <li>
+              Run simulated phishing campaigns to practise spotting fakes in a
+              safe environment
+            </li>
+          </ul>
+          <div class="risk">
+            91% of cyberattacks start with a phishing email. One click on a
+            malicious link can compromise your entire organisation.
+          </div>
+          <div class="action">
+            Schedule a short security awareness session for your team. Free
+            resources are available from the ACSC (cyber.gov.au).
+          </div>
+        </section>
+
+        <!-- Tip 6 -->
+        <section>
+          <h2>
+            <span class="tip-number">6</span> Limit Access Using Least
+            Privilege
+          </h2>
+          <ul>
+            <li>
+              Give people access to <strong>only what they need</strong> for
+              their role &mdash; nothing more
+            </li>
+            <li>
+              Review permissions <strong>quarterly</strong>, especially after
+              staff or volunteer changes
+            </li>
+            <li>
+              Not everyone needs admin access &mdash; most people only need
+              standard user accounts
+            </li>
+          </ul>
+          <div class="risk">
+            If a volunteer account with full admin access gets compromised, the
+            attacker has the keys to everything.
+          </div>
+          <div class="action">
+            Audit who has admin access to your systems right now. Remove any
+            access that isn't actively needed.
+          </div>
+        </section>
+
+        <!-- Tip 7 -->
+        <section>
+          <h2>
+            <span class="tip-number">7</span> Monitor Activity & Audit Logs
+          </h2>
+          <ul>
+            <li>
+              Track login attempts, file changes, and admin actions across your
+              systems
+            </li>
+            <li>
+              Set up <strong>alerts</strong> for unusual activity &mdash; logins
+              outside business hours or from unfamiliar locations
+            </li>
+            <li>
+              Even simple monitoring catches problems early, before they become
+              disasters
+            </li>
+          </ul>
+          <div class="risk">
+            The average data breach goes undetected for 200+ days. The longer an
+            attacker is in your systems, the more damage they do.
+          </div>
+          <div class="action">
+            Enable login notifications on your email and cloud services. Review
+            the "recent activity" logs in Google Workspace or Microsoft 365.
+          </div>
+        </section>
+
+        <!-- Tip 8 -->
+        <section>
+          <h2>
+            <span class="tip-number">8</span> Secure Endpoints & Mobile Devices
+          </h2>
+          <ul>
+            <li>
+              Every device that connects to your network is a potential entry
+              point &mdash; laptops, phones, tablets
+            </li>
+            <li>
+              Keep devices updated, encrypted, and protected with security
+              software
+            </li>
+            <li>
+              Use mobile device management (MDM) if staff use personal devices
+              for work
+            </li>
+          </ul>
+          <div class="risk">
+            A lost or stolen phone without a lock screen could give someone
+            access to your email, cloud files, and donor data.
+          </div>
+          <div class="action">
+            Ensure all work devices have screen locks, encryption enabled, and
+            remote wipe capability.
+          </div>
+        </section>
+
+        <!-- Tip 9 -->
+        <section>
+          <h2>
+            <span class="tip-number">9</span> Decommission Old Devices &
+            Accounts
+          </h2>
+          <ul>
+            <li>
+              Dormant accounts and old devices are
+              <strong>forgotten backdoors</strong> into your systems
+            </li>
+            <li>
+              When someone leaves, immediately disable their accounts and revoke
+              access
+            </li>
+            <li>
+              Wipe and securely dispose of old hardware &mdash; don't just throw
+              it in a drawer
+            </li>
+          </ul>
+          <div class="risk">
+            Former volunteers or staff with active accounts can still access
+            sensitive data &mdash; intentionally or not.
+          </div>
+          <div class="action">
+            Add account deprovisioning to your offboarding checklist. Review for
+            any old accounts that should be disabled now.
+          </div>
+        </section>
+
+        <!-- Tip 10 -->
+        <section>
+          <h2>
+            <span class="tip-number">10</span> Work With a Managed IT Partner
+          </h2>
+          <ul>
+            <li>
+              You don't have to do this alone &mdash; professional IT support
+              provides ongoing monitoring and threat detection
+            </li>
+            <li>
+              A managed partner can tailor security to your organisation's
+              specific needs and budget
+            </li>
+            <li>
+              Many offer <strong>non-profit pricing</strong> or discounted plans
+            </li>
+          </ul>
+          <div class="risk">
+            Without dedicated expertise, threats evolve faster than your team can
+            keep up. What worked last year may not protect you today.
+          </div>
+          <div class="action">
+            Research managed IT providers in your area that offer non-profit
+            rates. TechSoup is a good starting point.
+          </div>
+        </section>
+
+        <!-- Checklist slide -->
+        <section>
+          <h2>Your Cybersecurity Checklist</h2>
+          <div class="two-col">
+            <ul class="checklist">
+              <li>Turn on automatic software updates</li>
+              <li>Set up a password manager</li>
+              <li>Enable MFA on critical accounts</li>
+              <li>Verify backups are running (3-2-1 rule)</li>
+              <li>Schedule a security awareness session</li>
+            </ul>
+            <ul class="checklist">
+              <li>Audit admin access &mdash; remove what's not needed</li>
+              <li>Enable login alerts and review activity logs</li>
+              <li>Enforce screen locks and encryption on devices</li>
+              <li>Disable accounts for departed staff/volunteers</li>
+              <li>Explore managed IT support options</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Closing slide -->
+        <section>
+          <h1>You don't need to be perfect.</h1>
+          <h3>You just need to be better than yesterday.</h3>
+          <p style="margin-top: 1.5em; font-size: 0.7em; color: #94a3b8">
+            Start with one or two items from the checklist and build from there.
+            <br />Every step you take makes your organisation a harder target.
+          </p>
+          <p class="source">
+            Content adapted from
+            <a href="https://www.milnsbridge.com.au/cybersecurity-hygiene-tips/"
+              >Milnsbridge: Cybersecurity Hygiene Tips</a
+            >
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        transition: "slide",
+        center: true,
+      });
+    </script>
+  </body>
+</html>
