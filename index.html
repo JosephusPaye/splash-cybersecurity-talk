@@ -100,25 +100,34 @@
         text-align: left;
       }
 
-      .checklist {
-        list-style: none;
-        padding-left: 0;
+      .checklist-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5em;
         text-align: left;
+        margin-top: 0.6em;
       }
 
-      .checklist li {
+      .checklist-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5em;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        padding: 0.5em 0.6em;
         font-size: 0.65em;
-        margin-bottom: 0.35em;
-        padding-left: 1.5em;
-        position: relative;
+        line-height: 1.35;
+        color: #cbd5e1;
       }
 
-      .checklist li::before {
-        content: "\2610";
-        position: absolute;
-        left: 0;
-        color: #60a5fa;
+      .checklist-item .tip-number {
+        flex-shrink: 0;
+        width: 1.6em;
+        height: 1.6em;
+        line-height: 1.6em;
         font-size: 1.1em;
+        margin-right: 0;
       }
 
       .subtitle {
@@ -577,19 +586,39 @@
         <!-- Checklist slide -->
         <section>
           <h2>Your Cybersecurity Checklist</h2>
-          <div class="two-col">
-            <ul class="checklist">
-              <li>Use 1Password &mdash; not your browser &mdash; for all passwords</li>
-              <li>Enable MFA on your Microsoft 365 account</li>
-              <li>Think before you click &mdash; verify suspicious messages</li>
-              <li>Install updates and keep Malwarebytes running</li>
-            </ul>
-            <ul class="checklist">
-              <li>Lock your screen when away, log out at end of day</li>
-              <li>Use your phone's hotspot instead of public Wi-Fi</li>
-              <li>Save work files to OneDrive, not your desktop</li>
-              <li>Report anything suspicious to Ennia and Josephus</li>
-            </ul>
+          <div class="checklist-grid">
+            <div class="checklist-item">
+              <span class="tip-number">1</span>
+              <span>Use 1Password &mdash; not your browser &mdash; for all passwords</span>
+            </div>
+            <div class="checklist-item">
+              <span class="tip-number">2</span>
+              <span>Enable MFA on your Microsoft 365 account</span>
+            </div>
+            <div class="checklist-item">
+              <span class="tip-number">3</span>
+              <span>Think before you click &mdash; verify suspicious messages</span>
+            </div>
+            <div class="checklist-item">
+              <span class="tip-number">4</span>
+              <span>Install updates and keep Malwarebytes running</span>
+            </div>
+            <div class="checklist-item">
+              <span class="tip-number">5</span>
+              <span>Lock your screen when away, log out at end of day</span>
+            </div>
+            <div class="checklist-item">
+              <span class="tip-number">6</span>
+              <span>Use your phone's hotspot instead of public Wi-Fi</span>
+            </div>
+            <div class="checklist-item">
+              <span class="tip-number">7</span>
+              <span>Save work files to OneDrive, not your desktop</span>
+            </div>
+            <div class="checklist-item">
+              <span class="tip-number">8</span>
+              <span>Report anything suspicious to Ennia and Josephus</span>
+            </div>
           </div>
         </section>
 
@@ -603,7 +632,7 @@
             Splash of Colour safer.
           </p>
           <p class="source">
-            Content adapted from
+            Some content adapted from
             <a href="https://www.milnsbridge.com.au/cybersecurity-hygiene-tips/"
               >Milnsbridge: Cybersecurity Hygiene Tips</a
             >
